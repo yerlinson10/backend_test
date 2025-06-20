@@ -14,7 +14,7 @@ class ProductService
      */
     public function getAll(): Collection
     {
-        return Product::all();
+        return Product::all()->load(['currency', 'prices']);
     }
 
     /**
@@ -39,7 +39,7 @@ class ProductService
     public function update(Product $product, array $data): Product
     {
         $product->update($data);
-        return $product->load('currency');
+        return $product->load(['currency', 'prices']);
     }
 
 

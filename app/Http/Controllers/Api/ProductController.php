@@ -11,7 +11,7 @@ use App\Http\Requests\Product\UpdateRequest;
 
 class ProductController extends Controller
 {
-        protected $productService;
+    protected $productService;
     public function __construct()
     {
         $this->productService = new ProductService();

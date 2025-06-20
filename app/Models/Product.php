@@ -39,4 +39,13 @@ class Product extends Model
     {
         return $this->hasMany(Currency::class, 'id', 'currency_id');
     }
+    /**
+     * Get all of the product prices for the Product
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function prices(): HasMany
+    {
+        return $this->hasMany(ProductPrice::class, 'product_id', 'id');
+    }
 }
