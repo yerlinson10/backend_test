@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Services\ProductService;
 use App\Http\Controllers\Controller;
+use App\Services\ProductPriceService;
 use App\Http\Requests\Product\StoreRequest;
 use App\Http\Requests\Product\UpdateRequest;
 
@@ -35,6 +36,32 @@ class ProductController extends Controller
         return response()->json($product, 201);
     }
 
+    /**
+     * Get prices for a specific product.
+     *
+     * @param Product $product
+     *
+     * @return [type]
+     */
+    public function getPrices(Product $product)
+    {
+        $prices = $this->productService->getPrices($product);
+        return response()->json($prices);
+    }
+
+    public function addPrice(Request $request, Product $product)
+    {
+        $request->validate([
+            'currency_id' => 'required|exists:currencies,id',
+            'price' => 'required|decimal:0.01,999999.99',
+        ]);
+
+        $data = $request->only(['currency_id', 'price']);
+        $data['product_id'] = $product->id;
+
+        $productPrice = (new ProductPriceService())->create($data);
+        return response()->json($productPrice, 201);
+    }
     /**
      * Display the specified resource.
      */

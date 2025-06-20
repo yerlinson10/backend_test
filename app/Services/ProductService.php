@@ -30,6 +30,17 @@ class ProductService
     }
 
     /**
+     * Get prices for a specific product.
+     *
+     * @param Product $product
+     * @return Collection
+     */
+    public function getPrices(Product $product): Collection
+    {
+        return $product->prices()->with('currency')->get();
+    }
+
+    /**
      * Update an existing product.
      *
      * @param Product $product

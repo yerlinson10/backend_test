@@ -15,6 +15,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('currencies', App\Http\Controllers\Api\CurrencyController::class);
 
     // Product routes
+    Route::get('/products/{product}/prices', [App\Http\Controllers\Api\ProductController::class, 'getPrices']);
+    Route::post('/products/{product}/prices', [App\Http\Controllers\Api\ProductController::class, 'addPrice']);
     Route::apiResource('products', App\Http\Controllers\Api\ProductController::class);
     // Product Price routes
     Route::apiResource('product-prices', App\Http\Controllers\Api\ProductPriceController::class);
