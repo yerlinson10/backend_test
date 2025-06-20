@@ -13,4 +13,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Currency routes
     Route::apiResource('currencies', App\Http\Controllers\Api\CurrencyController::class);
+
+    // Product routes
+    Route::apiResource('products', App\Http\Controllers\Api\ProductController::class);
 });
