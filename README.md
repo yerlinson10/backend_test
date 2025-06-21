@@ -10,7 +10,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+**Description:** *Get the logged in user*
 
 ## 2. `POST/api/login`
 
@@ -22,7 +22,7 @@
 - `Content-Type`: `multipart/form-data`
 - `User-Agent`: `insomnia/11.2.0`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+**Description:** *Login*
 
 ## 3. `GET/api/currencies`
 
@@ -33,7 +33,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 4. `GET/api/products`
 
@@ -44,7 +44,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 5. `GET/api/product-prices/`
 
@@ -55,7 +55,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 6. `GET/api/currencies/1`
 
@@ -66,7 +66,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 7. `GET/api/products/1`
 
@@ -77,7 +77,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 8. `GET/api/product-prices/1`
 
@@ -88,7 +88,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 9. `POST/api/currencies/`
 
@@ -101,7 +101,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 10. `POST/api/products/`
 
@@ -114,7 +114,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 11. `POST/api/product-prices/`
 
@@ -127,7 +127,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 12. `POST/api/products/1`
 
@@ -140,7 +140,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 13. `POST/api/product-prices/1`
 
@@ -153,7 +153,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 14. `POST/api/currencies/1`
 
@@ -166,7 +166,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 15. `DELETE/api/currencies/2`
 
@@ -179,7 +179,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 16. `DELETE/api/products/2`
 
@@ -192,7 +192,7 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
 
 ## 17. `DELETE/api/product-prices/2`
 
@@ -205,4 +205,4 @@
 - `User-Agent`: `insomnia/11.2.0`
 - `Authorization`: `Bearer 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177`
 **Body of the request:** Not applicable
-**Description:** *(Describir funcionalidad aquí)*
+
