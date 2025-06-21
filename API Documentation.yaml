@@ -1,0 +1,804 @@
+type: collection.insomnia.rest/5.0
+name: Back end API
+meta:
+  id: wrk_bec5d702f8ac4048a4a081b43330d18c
+  created: 1750454205261
+  modified: 1750460822205
+  description: ""
+collection:
+  - name: Currencies
+    meta:
+      id: fld_b0c44c30e2aa446aba8d710c4ab7e34c
+      created: 1750454318588
+      modified: 1750458687006
+      sortKey: -1750454318588
+      description: ""
+    children:
+      - url: http://127.0.0.1:8000/api/currencies
+        name: Currencies
+        meta:
+          id: req_165833c6ea0147d4bfed5a324c18f26f
+          created: 1750454205570
+          modified: 1750455018148
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322596
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/currencies/:id
+        name: Currency
+        meta:
+          id: req_0f737714dbd84e5c9d1be5df8d3efdc1
+          created: 1750455033258
+          modified: 1750455134360
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322546
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/currencies/
+        name: Create Currency
+        meta:
+          id: req_9c0c350b64e34861a3b96bd4204cf176
+          created: 1750455169702
+          modified: 1750455683663
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322496
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_0f15513665d742278baa67fcde876b86
+              name: name
+              value: dolar2
+              description: ""
+              disabled: false
+            - id: pair_e5f4b24eab604dcc8a56133d34797c9d
+              name: symbol
+              value: $
+              description: ""
+              disabled: false
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: exchange_rate
+              value: "58.29"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/currencies/:id
+        name: Edit Currency
+        meta:
+          id: req_4f7918b3d0714be08ef0166bbd8ebf8c
+          created: 1750455546205
+          modified: 1750455617059
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322446
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_6da1341d42464e3ea2efe7386b3c3885
+              name: _method
+              value: PUT
+              description: ""
+              disabled: false
+            - id: pair_0f15513665d742278baa67fcde876b86
+              name: name
+              value: dolar
+              description: ""
+              disabled: true
+            - id: pair_e5f4b24eab604dcc8a56133d34797c9d
+              name: symbol
+              value: $
+              description: ""
+              disabled: true
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: exchange_rate
+              value: "58.30"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/currencies/:id
+        name: Delete Currency
+        meta:
+          id: req_95de2451a32247dba22a10bf5f39e90c
+          created: 1750455697953
+          modified: 1750455720738
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322396
+        method: DELETE
+        body:
+          mimeType: multipart/form-data
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "2"
+  - name: Auth
+    meta:
+      id: fld_0c3c968727f9410a9c50921a39bbd756
+      created: 1750454438244
+      modified: 1750454438244
+      sortKey: -1750454438244
+      description: ""
+    children:
+      - url: http://127.0.0.1:8000/api/user
+        name: Logged user
+        meta:
+          id: req_55d4156538bc42358119cf1b6cebb9c3
+          created: 1750454457219
+          modified: 1750454965342
+          isPrivate: false
+          description: Request the logged-in user with the token sent
+          sortKey: -1750454457219
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_8653e660d073433a951402838bd02214
+          - id: pair_d0843fd791d34dfe9398ac9335996800
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/login
+        name: Login
+        meta:
+          id: req_7240d4ba2c8747b4bd1c65c230046af2
+          created: 1750454676244
+          modified: 1750454906348
+          isPrivate: false
+          description: Request the logged-in user with the token sent
+          sortKey: -1750454389907.5
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_1da12e0202ae4c89aca160bd7e04da40
+              name: email
+              value: admin@admin.com
+              description: User email
+              disabled: false
+            - id: pair_54bab470191b4c09a10ba4c3670a95dd
+              name: password
+              value: admin1234
+              description: User password
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_8653e660d073433a951402838bd02214
+          - id: pair_d0843fd791d34dfe9398ac9335996800
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Products
+    meta:
+      id: fld_fc8f14a646bf494f81e61c6afb6d234a
+      created: 1750458678719
+      modified: 1750458698741
+      sortKey: -1750454318538
+      description: ""
+    children:
+      - url: http://127.0.0.1:8000/api/products
+        name: Products
+        meta:
+          id: req_1f12b5c99464433a98dcbae1d198243f
+          created: 1750458678721
+          modified: 1750462809914
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322596
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|hbiGCA4dbQmPBWpKdy177OrOkc53c16rBl8BqVRXdd0e397d
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/products/:id
+        name: Product
+        meta:
+          id: req_121954bff3d940b9a60e61215adf0b54
+          created: 1750458678723
+          modified: 1750458756801
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322546
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/products/
+        name: Create Products
+        meta:
+          id: req_cea22e910392428a8dbea3487a66aed3
+          created: 1750458678724
+          modified: 1750459165121
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322496
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_0f15513665d742278baa67fcde876b86
+              name: name
+              value: test 2
+              description: ""
+              disabled: false
+            - id: pair_e5f4b24eab604dcc8a56133d34797c9d
+              name: description
+              value: test
+              description: ""
+              disabled: false
+              type: text
+              multiline: true
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: price
+              value: "58.29"
+              description: ""
+              disabled: false
+            - id: pair_04ac81fefa2e4c58a2bca0dc053c89b6
+              name: currency_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_fa28e5b7acb14345a7141a6303d54278
+              name: tax_cost
+              value: "50"
+              description: ""
+              disabled: false
+            - id: pair_3ff25c86ce4a45ac8328d00eb0d91f84
+              name: manufacturing_cost
+              value: "50"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/products/:id
+        name: Delete Products
+        meta:
+          id: req_680a81fa863249a9b3844841c241f67c
+          created: 1750458678727
+          modified: 1750458768461
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322396
+        method: DELETE
+        body:
+          mimeType: multipart/form-data
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "2"
+      - url: http://127.0.0.1:8000/api/products/:id
+        name: Edit Product
+        meta:
+          id: req_dd6a422ed1064f84b0911950aa4c553b
+          created: 1750459102824
+          modified: 1750461529025
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322471
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id": 1,
+            	"name": "test 4",
+            	"description": "test",
+            	"price": 58.29,
+            	"currency_id": 1,
+            	"tax_cost": 50,
+            	"manufacturing_cost": 50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/products/:id/prices
+        name: Product Prices
+        meta:
+          id: req_116b0c63b3164fcf874e9864c91a4b89
+          created: 1750461588393
+          modified: 1750461829932
+          isPrivate: false
+          description: ""
+          sortKey: -1750461588393
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/products/:id/prices
+        name: Create Product Price
+        meta:
+          id: req_4ddb18e584bb41bf951841393c06b176
+          created: 1750462018392
+          modified: 1750462235212
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322483.5
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_04ac81fefa2e4c58a2bca0dc053c89b6
+              name: currency_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: price
+              value: "45.0"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+  - name: Products Prices
+    meta:
+      id: fld_e7c425ce8b4c4cdbba65f905c1b56282
+      created: 1750460367528
+      modified: 1750460702882
+      sortKey: -1750454318488
+      description: ""
+    children:
+      - url: http://127.0.0.1:8000/api/product-prices/
+        name: List prices
+        meta:
+          id: req_a230005d4f52467da643149c3d5e1962
+          created: 1750460367530
+          modified: 1750460448792
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322596
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/product-prices/:id
+        name: Prices
+        meta:
+          id: req_c00a5960518145acbfc433b8b05b31d8
+          created: 1750460367531
+          modified: 1750460437540
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322546
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+      - url: http://127.0.0.1:8000/api/product-prices/
+        name: Create Prices
+        meta:
+          id: req_1dca542b5db64e0dbe63132e0b502ca1
+          created: 1750460367532
+          modified: 1750460536414
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322496
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_0f15513665d742278baa67fcde876b86
+              name: product_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_04ac81fefa2e4c58a2bca0dc053c89b6
+              name: currency_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: price
+              value: "58.29"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:8000/api/product-prices/:id
+        name: Delete Prices
+        meta:
+          id: req_d4bc708a5a22476ea35601c701b6de0a
+          created: 1750460367533
+          modified: 1750460422802
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322396
+        method: DELETE
+        body:
+          mimeType: multipart/form-data
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "2"
+      - url: http://127.0.0.1:8000/api/product-prices/:id
+        name: Edit Prices
+        meta:
+          id: req_8c0e387acbd24a2d86555bf402b4f5b0
+          created: 1750460367534
+          modified: 1750460627010
+          isPrivate: false
+          description: ""
+          sortKey: -1750454322471
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_30a6f61d63a045378edc1d31e654e705
+              name: _method
+              value: PUT
+              description: ""
+              disabled: false
+            - id: pair_0f15513665d742278baa67fcde876b86
+              name: product_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_04ac81fefa2e4c58a2bca0dc053c89b6
+              name: currency_id
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_397fc3dba44242d790bd30a20b6c7e7c
+              name: price
+              value: "60.0"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_7eda1234488b479cab858ae24416dfc9
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_4900b303079747f7b8159f659c079801
+          - id: pair_ad51348bb86a471897e1e0094addd5fd
+            name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|WtifOpPYTCoMHYKqOnkEWvZ3wK3D5eFbF8ip9F8Ocac12177
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: "1"
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3448de1da6b5b7233cf1048045af8376f56710da
+    created: 1750454205270
+    modified: 1750454205270
+environments:
+  name: Base Environment
+  meta:
+    id: env_3448de1da6b5b7233cf1048045af8376f56710da
+    created: 1750454205264
+    modified: 1750454205264
+    isPrivate: false
